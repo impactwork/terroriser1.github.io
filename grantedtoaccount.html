@@ -1,8 +1,10 @@
 <!--<a href="xyz.html" target="_blank"> Link </a>-->
 
-<script> 
-  <h3><a href="#" class="link" onclick="window.open('http://google.com', '_blank'); window.location.href=window.location.href">Test</a></h3>
-    </script>
+function changeLocation (){
+ setTimeout(function(){
+  window.location = "http://bing.com";
+ },200);
+}
 
 <!--<script>
 window.top.close();
