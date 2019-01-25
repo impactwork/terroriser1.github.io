@@ -1,4 +1,20 @@
 <html>
-<script window.location.replace("http://stackoverflow.com");
-window.location.href = "http://stackoverflow.com"; </script>
-<html>
+<head>
+<title>A web page that points a browser to a different page after 2 seconds</title>
+<meta http-equiv="refresh" content="2; URL=http://example.com/services/computing/">
+<meta name="keywords" content="automatic redirection">
+</head>
+<body>
+If your browser doesn't automatically go there within a few seconds, 
+you may want to go to 
+<a href="http://example.com/">the destination</a> 
+manually.
+</body>
+</html>
+...or it can done with JavaScript. This JavaScript example opens the new site in a new browser window after a 4.5-second (4500 ms) delay:
+
+ <script language="javascript" type="text/javascript">
+     <!--
+     window.setTimeout('window.open("http://example.com/","newsite")',4500);
+     // -->
+ </script>
