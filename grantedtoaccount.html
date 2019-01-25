@@ -1,12 +1,27 @@
 <!--<a href="xyz.html" target="_blank"> Link </a>-->
 
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
-function changeLocation (){
- setTimeout(function(){
-  window.location = "http://bing.com";
- },200);
+jQuery(document).ready(function () {
+newTab();
+});
+
+function newTab() {
+ var form = document.createElement("form");
+ form.method = "GET";
+ form.action = "http://www.google.com";
+ form.target = "_blank";
+ document.body.appendChild(form);
+ form.submit();
 }
- </script>
+</script>
+</head>
+<body>
+<a class="my-link">link</a>
+</body>
+</html>
 
 <!--<script>
 window.top.close();
