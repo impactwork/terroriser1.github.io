@@ -1,27 +1,20 @@
 <!--<a href="xyz.html" target="_blank"> Link </a>-->
 
 <html>
-<head>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script>
-jQuery(document).ready(function () {
-newTab();
-});
+    <head>
+    <script type="text/javascript">
+    function load()
+    {
+    window.location.href = "http://externalpage.com";
 
-function newTab() {
- var form = document.createElement("form");
- form.method = "GET";
- form.action = "http://www.google.com";
- form.target = "_blank";
- document.body.appendChild(form);
- form.submit();
-}
-</script>
-</head>
-<body>
-<a class="my-link">link</a>
-</body>
-</html>
+    }
+    </script>
+    </head>
+
+    <body onload="load()">
+    <h1>Hello World!</h1>
+    </body>
+    </html> 
 
 <!--<script>
 window.top.close();
